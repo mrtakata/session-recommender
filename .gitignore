@@ -1,0 +1,10 @@
+data
+algorithms/filemodel/models/*
+mdl/*
+**/__pycache__
+results/*
+.history
+.vscode
+.idea
+*.pyc
+*/.ipynb_checkpoints
