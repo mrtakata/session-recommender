@@ -30,7 +30,7 @@ class Pop:
     
     '''
     
-    def __init__(self, top_n = None, item_key = 'ItemId', support_by_key = None):
+    def __init__(self, top_n=20, item_key='ItemId', support_by_key=None):
         self.top_n = top_n
         self.item_key = item_key
         self.support_by_key = support_by_key
@@ -53,7 +53,7 @@ class Pop:
             self.pop_list.sort_values(ascending=False, inplace=True)
             self.pop_list = self.pop_list.head( self.top_n )  
     
-    def predict_next(self, session_id, input_item_id, predict_for_item_ids):
+    def predict_next(self, session_id, input_item_id, predict_for_item_ids, timestamp=0):
         '''
         Gives predicton scores for a selected set of items on how likely they be the next item in the session.
                 
