@@ -19,7 +19,6 @@ from algorithms.knn import scknn as ssknn
 from algorithms.knn import wknn as wsknn
 from algorithms.knn import hcknn
 from algorithms.knn import vmknn as vsknn
-from algorithms.knn import pfsknn as pfsknn
 # from algorithms.knn import wcknn as wsknn
 from algorithms.knn import stanknn as stansknn
 
