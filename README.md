@@ -1,4 +1,14 @@
-This repository has been bootstrapped from the codebase available (accessed on 26-02-19) on the paper [Evaluation of Session-based Recommendation Algorithms](https://arxiv.org/pdf/1803.09587.pdf).
+This repository has been bootstrapped from the codebase available (accessed on 13-03-21) on the paper [Evaluation of Session-based Recommendation Algorithms](https://arxiv.org/pdf/1803.09587.pdf).
+
+We developed extension of the S-KNN model that allows pre-filtering and post-filtering
+strategies based on the timestamp of the interactions. We implemented the following algorithms:
+
+- Session-KNN (in wknn): We created a class that extended the original S-KNN model that is able to use contextual extensions, use different similarity functions, sampling strategies and scoring functions.
+- Context-IKNN: Item-based KNN that uses only information of interactions that happened in the same context.
+- Item2Vec: An adaptation of the Word2Vec model that creates item embeddings by analyzing sessions as sentences and words as items.
+- Session2Vec: An algorithm that creates item embeddings similarly to the Item2Vec algorithm, but combines item embeddings in order to create session embeddings.
+
+We also adapted the `run_test.py` script so that you can run the tests based on the dataset.
 
 Below you can find the README made available from the paper's authors.
 
@@ -46,6 +56,6 @@ Usage
 	* run_test_pr.py evaluates predictions for single split in terms of all remaining items in the session (P@X, R@X, and MAP@X)
 	* run_test_window.py evaluates predictions for sliding window split in terms of the next item (HR@X and MRR@X)
  	* run_test_buys.py evaluates buy events in the sessions (only for the rsc15 dataset).The script run_preprocessing.py must have been executed with method "buys" before.
-	* The usage of all algorithms is exemplarily shown in the script. 
+	* The usage of all algorithms is exemplarily shown in the script.
 3. Run the script
 4. Results and run times will be displayed and saved to the results folder as configured
