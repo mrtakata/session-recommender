@@ -1,7 +1,11 @@
-Read Me
-======================
+This repository has been bootstrapped from the codebase available (accessed on 26-02-19) on the paper [Evaluation of Session-based Recommendation Algorithms](https://arxiv.org/pdf/1803.09587.pdf).
+
+Below you can find the README made available from the paper's authors.
+
+
 Requirements
 ----------------------
+
 * Anaconda 4.X (Python 3.5+)
 * Pympler
 * NumPy

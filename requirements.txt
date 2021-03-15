@@ -1,0 +1,8 @@
+pympler
+numpy
+pandas
+scipy
+theano
+tensorflow
+gensim
+psutil
